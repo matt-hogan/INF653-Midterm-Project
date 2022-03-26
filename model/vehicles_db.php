@@ -18,10 +18,10 @@
         if ($class_id) {
             $query .= $filter."V.Class_id = :class_id ";
         }
-        if ($order_by == "price") {
-            $query .= "ORDER BY V.Price ";
+        if ($order_by == "year") {
+            $query .= "ORDER BY V.Year DESC";
         } else {
-            $query .= "ORDER BY V.Year ";
+            $query .= "ORDER BY V.Price DESC";
         }
 
         $statement = $db->prepare($query);

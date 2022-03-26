@@ -52,14 +52,14 @@
             <div class="radio-sort-buttons vehicle-filter">
                 <label>Sort By:</label>
                 <?php if ($order_by == "price") { ?>
-                    <input type="radio" id="year" name="order_by" value="year">
-                    <label for="year">Year</label>
-                    <input type="radio" id="price" name="order_by" value="price" checked>
-                    <label for="price">Price</label>
-                <?php } else { ?>
                     <input type="radio" id="year" name="order_by" value="year" checked>
                     <label for="year">Year</label>
                     <input type="radio" id="price" name="order_by" value="price">
+                    <label for="price">Price</label>
+                <?php } else { ?>
+                    <input type="radio" id="year" name="order_by" value="year">
+                    <label for="year">Year</label>
+                    <input type="radio" id="price" name="order_by" value="price" checked>
                     <label for="price">Price</label>
                 <?php } ?>
             
